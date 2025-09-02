@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Mulish;
+}
+#top{
+  font-family: Matemasie;
+  font-size: 50px;
+
+}
+
+#card {
+  height: 200px;
+  width: 250px;
+  margin-top: 10px;
+  margin-left: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  color: black;
+}
+
+#card img {
+  border-radius: 10px;
+  background-size: cover;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+
+#card img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+  width: 100vw;
+  text-align: center;
+  color: white;
+  background-color: rgb(31, 31, 31);
+
+
+
+}
+
+#warn {
+  margin: 5px;
+  font-size: 30px;
+}
+
+#cells {
+  width: 70%;
+  border-radius: 10px;
+  padding-bottom: 15px;
+  background-color: rgba(137, 43, 226, 0);
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(57, 57, 57, 0.938);
+  justify-items: center;
+
+}
+
+#score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  margin: 20px;
+}
+
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog-box {
+  background: rgb(33, 33, 33);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.dialog-box button {
+  margin-top: 15px;
+  padding: 8px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.dialog-box button:hover {
+  background: #0056b3;
+}
